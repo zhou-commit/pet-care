@@ -375,10 +375,18 @@ function BookingForm({
       <p className="mb-[18px] text-sm text-muted">提交后门店会在 10 分钟内确认档期。</p>
       <div className="grid grid-cols-2 gap-3 max-sm:grid-cols-1">
         <FormField label="联系人" htmlFor="name">
-          <input id="name" name="name" placeholder="你的称呼" required />
+          <input id="name" name="name" placeholder="用户姓名" required />
         </FormField>
         <FormField label="手机号" htmlFor="phone">
-          <input id="phone" name="phone" placeholder="138 0000 0000" required />
+          <input
+            id="phone"
+            name="phone"
+            placeholder="请填写11位手机号"
+            autoComplete="tel"
+            inputMode="tel"
+            maxLength={20}
+            required
+          />
         </FormField>
         <FormField label="期望到店时间" htmlFor="arrivalTime" full>
           <input
