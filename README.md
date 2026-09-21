@@ -10,8 +10,8 @@
 supabase的注册流程：
           浏览器搜索supabase---注册/登录supabase（选择连接GitHub登录）---在supabase上新建一个项目
           ---点击connect然后看自己使用什么（AI agent选MCP/Vscode选direct）---然后配置env.local文件填入数据库连接串
-          ---在supabase上获取Session Pooler 连接串---（获取位置：Supabase 项目页 → 顶部 Connect → 选择 Session pooler → 复制 URI）
-          ---然后在终端输入npm.run.dev在Vscode上重新跑通项目
+          ---在supabase上获取Session Pooler 连接串（获取位置：Supabase 项目页 → 顶部 Connect → 选择 Session pooler → 复制 URI）
+          ---修改连接串中的密码改成数据库密码---然后在终端输入npm.run.dev在Vscode上重新跑通项目
 
 5.后端数据库的管理：
           在supabase的新建的项目的table上查看，可自己手动进行增删改查，网页端获取的客户信息也会在此显示
