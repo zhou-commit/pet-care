@@ -1,9 +1,6 @@
 # Dependencies
 node_modules/
 
-# Source-exported asset duplicates (the application serves public/assets/)
-assets/
-
 # Next.js build output
 .next/
 out/
